@@ -31,7 +31,5 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/the
 
 source ~/.zshrc
 p10k configure
-mkdir $ZSH_CUSTOM/colors
-cp $(dirname $0)/powerlevel10k/p10k.solarized.zsh $ZSH_CUSTOM/colors/ 
-ln -sf $ZSH_CUSTOM/colors/p10k.solarized.zsh $HOME/.p10k.zsh
+ln -sf $(dirname $0)/powerlevel10k/p10k.solarized.zsh $HOME/.p10k.zsh
 
